@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 :root {
-  --primary-color: #047aed;
-  --secondary-color: #1c3fa8;
+  --primary-color: #dd7f26;
+  --secondary-color: #d10f19;
   --dark-color: #002240;
   --light-color: #f4f4f4;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
+  --success-color: #56af56;
+  --error-color: #bd2f2a;
 }
 
 * {
@@ -16,8 +15,8 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
+  font-family: 'Caveat', sans-serif;
+  color: rgb(48, 45, 45);
   line-height: 1.6;
 }
 
@@ -27,7 +26,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: rgb(64, 18, 230);
 }
 
 h1,
@@ -35,10 +34,12 @@ h2 {
   font-weight: 300;
   line-height: 1.2;
   margin: 10px 0;
+  font-size: 45px;
 }
 
 p {
   margin: 10px 0;
+  font-size: 22px;
 }
 
 img {
@@ -47,8 +48,8 @@ img {
 
 code,
 pre {
-  background: #333;
-  color: #fff;
+  background: rgb(145, 32, 32);
+  color: rgb(233, 210, 210);
   padding: 10px;
 }
 
@@ -57,11 +58,16 @@ pre {
   height: 0;
 }
 
+.footer{
+  background-color: var(--primary-color);
+  color:#f8f6f6;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
-  height: 70px;
+  height: 75px;
 }
 
 .navbar ul {
@@ -72,10 +78,12 @@ pre {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
+  font-size: 20px;
 }
 
 .navbar a:hover {
-  border-bottom: 2px #fff solid;
+  border-bottom: 2px rgb(43, 30, 30) solid;
+  font-size: 25px;
 }
 
 .navbar .flex {
@@ -84,18 +92,20 @@ pre {
 
 /* Showcase */
 .showcase {
-  height: 400px;
+  height: 500px;
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
 }
 
 .showcase h1 {
-  font-size: 40px;
+  font-size: 65px;
+  font-family: cursive;
 }
 
 .showcase p {
-  margin: 20px 0;
+  margin: 30px 0;
+  font-size: 24px;
 }
 
 .showcase .grid {
@@ -105,7 +115,7 @@ pre {
 }
 
 .showcase-text {
-  animation: slideInFromLeft 1s ease-in;
+  animation: slideInFromLeft .5s ease-in;
 }
 
 .showcase-form {
@@ -116,7 +126,7 @@ pre {
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
-  animation: slideInFromRight 1s ease-in;
+  animation: slideInFromRight .5s ease-in;
 }
 
 .showcase-form .form-control {
@@ -153,8 +163,12 @@ pre {
 
 /* Stats */
 .stats {
-  padding-top: 100px;
-  animation: slideInFromBottom 1s ease-in;
+  padding-top: 90px;
+  animation: slideInFromLeft .5s ease-in;
+}
+
+.stats .container h3{
+  font-size: 25px;
 }
 
 .stats-heading {
@@ -204,8 +218,6 @@ pre {
 .languages .card h4 {
   font-size: 20px;
   margin-bottom: 10px;
-  width: 15%;
-  height: 15%;
 }
 
 .languages .card:hover {
@@ -222,6 +234,10 @@ pre {
 .features-sub-head img {
   width: 300px;
   justify-self: flex-end;
+}
+
+.features-head h1,.features-sub-head h1{
+  font-family:cursive;
 }
 
 .features-main .card > i {
@@ -245,6 +261,10 @@ pre {
   margin: 20px 0;
 }
 
+.docs-head h1{
+    font-family:cursive;
+}
+
 .docs-main .grid {
   grid-template-columns: 1fr 2fr;
   align-items: flex-start;
@@ -264,10 +284,25 @@ pre {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+  color:rgba(247, 242, 242, 0.849)
+}
+
+.footer .container a {
+  margin: 0 10px;
+  color:rgba(247, 242, 242, 0.849)
+}
+
+.footer .container ul li a:hover{
+  border-bottom: 2px rgb(43, 30, 30) solid;
+  font-size: 22px;
+}
+
+.footer .container ul li a{
+  font-size: 19px;
 }
 
 .fa-github:hover {
-  color: #000000;
+  color: #0e0d0d;
 }
 
 .fa-facebook:hover {
@@ -392,5 +427,10 @@ pre {
   
   .showcase-form {
     width: 300px;
+  }
+
+  .languages .card h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
